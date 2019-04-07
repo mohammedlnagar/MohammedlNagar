@@ -13,7 +13,7 @@ function scrollFunction() {
 
 
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-   //scrolling
+   // -------------- --------   scrolling   ----------- --------------------------
                     if(window.matchMedia('(max-width:450px)').matches){
                       Object.assign(header.style,
                                 
@@ -33,7 +33,7 @@ function scrollFunction() {
                       );
                       Object.assign(headerDiv.style,
 
-                        {fontSize:'3vw',
+                        {fontSize:'2.3vw',
                         flexDirection:'row',
                         justifyContent:'space-around',
                         width:'100%',

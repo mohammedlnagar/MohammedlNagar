@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "homepage":"http://mohammedlnagar.github.io/MohammedlNagar",
   "dependencies": {
     "gh-pages": "^2.0.1"
   }
