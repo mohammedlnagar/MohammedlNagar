@@ -260,26 +260,26 @@ body{
 }
 
 #first{
-  background-image: url('thought-catalog-214785-unsplash.jpg');
+  background-image: url('aboutmebk-resized.jpg');
   background-blend-mode: screen;
   background-size: cover;
 }
 
 #second{
-  background-image: url('kevin-ku-392517-unsplash.jpg');
+  background-image: url('experiencebk-resized.jpg');
   background-blend-mode: screen;
   background-size: cover;
   display:flex;
 }
 
 #third{
-  background-image: url('patrick-tomasso-71909-unsplash.jpg');
+  background-image: url('skills-resized.jpg');
   background-blend-mode: screen;
   background-size: cover;
 
 }
 #forth{
-  background-image: url('programming-world-map-on.jpg');
+  background-image: url('projects-resized.jpg');
   background-blend-mode: screen;
   background-size: cover;
 }
@@ -296,7 +296,7 @@ body{
 .footer .rotation{
   z-index: -1;
   width: 45vw;
-  height: 5vh;
+  height: 7vh;
   display: flex;
   flex-direction: column;
   font-family: 'Raleway';
@@ -305,10 +305,7 @@ body{
   border-radius: 20px;
   transition: all 1s linear;
   background-color:white;
-  box-shadow: 5px 5px 0px 2px white,     /* R and B*/
-  -5px -5px 0px 2px white,     /* L and U*/
-  5px -5px 0px 2px white,     /* R and U*/
-  -5px 5px 0px 2px white;    /* L and B*/
+
 
 }
 .footer .rotation h2{
@@ -339,6 +336,7 @@ body{
   }
   
 }
+
 .footer .footerId{
   background-color:#EEEEEE;
   display:flex;
@@ -447,7 +445,6 @@ body{
   transition: all 0.2s linear;
 }
 .footer .footerId .linking .fa:hover{
-  
   padding:0vw 5vw;
 }
 
@@ -475,8 +472,12 @@ body{
   color: white;
 }
 
-/*----- media query when the window is not more than 450px------*/
+/*----- media query when the window is not more than 450px  ------*/
 @media screen and (max-width:450px){
+  a:active{
+    background: white;
+    color:black;
+  }
   #header{
     height:100vh;
     padding:0px;
@@ -526,6 +527,9 @@ body{
   .divs #third + .paragraph .progress .progressInner h6 {
   font-size: 3vw;
  
+}
+#second{
+ background-position: -200px;
 }
 .footer .rotation{
   width: 80vw;
