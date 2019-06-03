@@ -266,7 +266,7 @@ headerName.addEventListener('click',
   }));
 pointer.addEventListener('click',
 (function(){
-  document.querySelector('#first').scrollIntoView({ behavior: 'smooth' });
+  document.querySelector('#about_me').scrollIntoView({ behavior: 'smooth' });
 })
 );
 
