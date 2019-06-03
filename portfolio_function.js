@@ -1,7 +1,7 @@
 var header = document.querySelector('#header');
-var headerName = document.querySelector('#header .name');
+var headerName = document.querySelector('.name');
 var headerDiv = document.querySelector("#headerLinks");
-var pointer = document.querySelector("#header .pointer");
+var pointer = document.querySelector(".pointer");
 
 
 
@@ -14,6 +14,7 @@ function scrollFunction() {
 
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
    // -------------- --------   scrolling   ----------- --------------------------
+                /* widow width is between 0 to 450 px */
                     if(window.matchMedia('(max-width:450px)').matches){
                       Object.assign(header.style,
                                 
@@ -40,11 +41,14 @@ function scrollFunction() {
                         height:'50%',
                         alignItems:'center'}
                       );
+              
                       Object.assign(pointer.style,
 
                         {display:'none'}
                         );
                     }
+                /* widow width is between 450 to 800 px */
+
                     else if(window.matchMedia('(max-width:800px) and (min-width:450px)').matches){
                       Object.assign(header.style,
                                 
@@ -76,6 +80,8 @@ function scrollFunction() {
                           );
                         
                     }
+                /* window width is the more than 800px */
+
                     else{
 
                       Object.assign(header.style,
@@ -260,7 +266,7 @@ headerName.addEventListener('click',
   }));
 pointer.addEventListener('click',
 (function(){
-  document.querySelector('#first').scrollIntoView({ behavior: 'smooth' });
+  document.querySelector('#about_me').scrollIntoView({ behavior: 'smooth' });
 })
 );
 
