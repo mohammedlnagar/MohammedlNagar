@@ -3,6 +3,9 @@ var headerName = document.querySelector('.name');
 var headerDiv = document.querySelector("#headerLinks");
 var pointer = document.querySelector(".pointer");
 
+var vid = document.querySelector(".vid_container");
+
+
 
 
 window.onscroll = function () { scrollFunction() };
@@ -46,6 +49,11 @@ function scrollFunction() {
 
                         {display:'none'}
                         );
+
+                      Object.assign(vid.style,
+
+                          {display:'none'}
+                          );
                     }
                 /* widow width is between 450 to 800 px */
 
@@ -78,7 +86,10 @@ function scrollFunction() {
 
                           {display:'none'}
                           );
-                        
+                          Object.assign(vid.style,
+
+                            {display:'none'}
+                            );
                     }
                 /* window width is the more than 800px */
 
@@ -111,6 +122,10 @@ function scrollFunction() {
 
                           {display:'none'}
                           );
+                          Object.assign(vid.style,
+
+                            {display:'none'}
+                            );
                     }
 
                        
@@ -167,6 +182,10 @@ function scrollFunction() {
 
                           }
                           );
+                          Object.assign(vid.style,
+
+                            {display:'block'}
+                            );
                       }else if(window.matchMedia('(max-width:800px) and (min-width:450px)').matches){
                         Object.assign(header.style,
                                   
@@ -207,7 +226,10 @@ function scrollFunction() {
                             marginTop:'70px'
                           }
                           );
-                          
+                          Object.assign(vid.style,
+
+                            {display:'block'}
+                            );
                       }
                       else{
                         Object.assign(header.style,
@@ -249,6 +271,10 @@ function scrollFunction() {
                             marginTop:'70px'
                           }
                           );
+                          Object.assign(vid.style,
+
+                            {display:'block'}
+                            );
                           }
                       }
                                   
