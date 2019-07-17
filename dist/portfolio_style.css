@@ -197,7 +197,66 @@ body{
                             font-family: 'Poppins';
                             color: white;
                           }
+/*  the projects div */
+                          
+                        
+                          .project_container {
+                            position: relative;
+                            width: 35%;
+                            height: 45%;
 
+                            color: white;
+                            margin-top: 10vw;
+
+                            border: 0 solid;
+                            border-radius: 10%;
+                            overflow: hidden;
+                          }
+                          
+                          .image {
+                            display: flex;
+                            width: 100%;
+                            height: 100%;
+                            justify-content: center;
+                            align-items:center;
+                          }
+                          
+                          .project_overlay {
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            background-color: black;
+                            overflow: hidden;
+                            width: 100%;
+                            height: 0;
+                            transition: .5s ease;
+                            opacity: 0.75;
+                            
+                          }
+                          
+                          .project_container:hover .project_overlay {
+                              height: 100%;
+                            
+                          }
+                          .text {
+                            width: 100%;
+                              color: white;
+                              font-size: 1.5vw;
+                              position: absolute;
+                              top: 50%;
+                              left: 50%;
+                              -webkit-transform: translate(-50%, -50%);
+                              -ms-transform: translate(-50%, -50%);
+                              transform: translate(-50%, -50%);
+                              text-align: center;
+                          }
+                          .text p{
+                            color:green;
+                            
+                          }
+                          
+                       
 
  /* the skills div  */
                                                     
@@ -538,6 +597,14 @@ body{
 #experience{
  background-position: -200px;
 }
+/* the project section */
+.project_container {
+  width: 70%;
+  height: 25%;
+}
+.text {
+font-size: 4vw;
+}
 .contact_info{
   padding-top: 40vh;
   padding-left: 2vh;}
@@ -589,12 +656,20 @@ body{
     font-size: 2vw;
   }
   #about_me + p{
-    font-size: 3.7vw;
+    font-size:100%;
   }
   .divs #skills + .paragraph h5{
     font-size: 3vw;
     height:5vh;
     width:70vw;
+}
+/* the project section */
+.project_container {
+  width: 80%;
+  height: 25%;
+}
+.text {
+font-size: 100%;
 }
 .contact_info{
   padding-top: 40vh;
